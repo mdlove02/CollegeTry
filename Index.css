@@ -1,0 +1,168 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	line-height: 1.6;
+	color: white;
+	background-color: black;
+}
+
+header {
+	display: flex;
+	background-color: maroon;
+	padding: 0em;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+footer {
+	display: flex;
+    background-color: maroon;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main {
+	display: flex;
+	
+}
+
+.BreweryLogo {
+	position: absolute;
+	max-width: 150px;
+	max-height: 150px;
+	z-index: 1;
+}
+
+.BreweryPic {
+	max-width: 1000px;
+	max-height: 700px;
+	
+}
+
+
+.main-header, .main-footer {
+	padding-left: 0em;
+	padding-right: 0em;
+	
+}
+
+li {
+	display: flex;
+	list-style-type: none;
+}
+
+a	{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: cyan;
+}
+
+
+/* ================================= 
+ media queries
+==================================== */
+
+@media (min-width: 576px) {
+	.sticky {
+		flex-direction: column;
+		min-height: 100vh;
+		flex-grow: 1;
+		flex
+	}
+
+	.nav-links {
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	
+	.main-header, .main {
+		flex-direction: row;
+	}
+
+	.main-footer {
+		flex-direction: column;
+	}
+	.main {
+		flex-direction: column;
+		;
+	}
+ 
+
+}
+
+@media (min-width: 769px) {
+	.sticky {
+		flex-direction: column;
+		min-height: 100vh;
+		flex-grow: 1;
+		flex
+	}
+	.main {
+		flex-direction: column;
+		;
+	}
+}
+
+  
+
+
+@media (min-width: 1025px) {
+	.sticky {
+		flex-direction: row;
+		min-height: 100vh;
+		flex-grow: 1;
+		flex
+	}
+
+	.nav-links {
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+	
+	.main-header {
+		flex-direction: row;
+	}
+
+	.main {
+		flex-direction: row;
+		;
+	}
+
+	.main-footer {
+		flex-direction: column;
+	}
+
+	li {
+		align-items: flex-end;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
