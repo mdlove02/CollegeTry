@@ -15,10 +15,27 @@ body {
 }
 
 header {
-	display: flex;
+	
 	background-color: maroon;
 	padding: 2em;
 }
+
+nav ul li a {
+	color: white;
+	background-color: black;
+	
+
+}
+
+nav ul li {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	flex-wrap: wrap;
+	
+}
+
+
 
 p {
 	font-size: .95em;
@@ -27,16 +44,25 @@ p {
 
 footer {
 	display: flex;
+	list-style: none;
     background-color: maroon;
 }
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
-
-.main {
-	display: flex;
+.linkedin, .github, .Form {
+	color: white;
 	
+} 
+.main {
+	display: inline flex;
+	
+}
+
+.items {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .logo {
@@ -47,8 +73,9 @@ footer {
 }
 
 .brewery {
-	max-width: 1000px;
+	max-width: 1500px;
 	max-height: 700px;
+	justify-content: space-around;
 	
 }
 
@@ -59,19 +86,10 @@ footer {
 	
 }
 
-li {
-	display: inline-flex;
-	list-style-type: none;
-}
-
-a	{
-	color: white;
-	text-decoration: none;
-}
-
 a:hover {
 	color: cyan;
 }
+
 
 
 /* ================================= 
@@ -84,10 +102,6 @@ a:hover {
 		min-height: 100vh;
 		flex-grow: 1;
 		flex
-	}
-
-	.main-header, .main {
-		flex-direction: row;
 	}
 
 	.main-footer {
@@ -122,11 +136,7 @@ a:hover {
 		flex-direction: row;
 		min-height: 100vh;
 		flex-grow: 1;
-		flex
-	}
-
-	.main-header {
-		flex-direction: row;
+		
 	}
 
 	.main {
