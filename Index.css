@@ -1,94 +1,114 @@
 /* ================================= 
-  Base Styles
+  Base
 ==================================== */
 
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
-	
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	line-height: 1.6;
 	color: white;
 	background-color: black;
 }
 
-header {
-	
+header, footer, a {
 	background-color: maroon;
-	padding: 2em;
-}
-
-nav ul li a {
 	color: white;
-	background-color: black;
-	
-
-}
-
-nav ul li {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	flex-wrap: wrap;
-	
-}
-
-
-
-p {
-	font-size: .95em;
-	margin-bottom: 1.5em;
-}
-
-footer {
-	display: flex;
-	list-style: none;
-    background-color: maroon;
-}
-
-/* ================================= 
-  Base Layout Styles
-==================================== */
-.linkedin, .github, .Form {
-	color: white;
-	
-} 
-.main {
-	display: inline flex;
-	
-}
-
-.items {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.logo {
-	position: absolute;
-	max-width: 150px;
-	max-height: 150px;
-	z-index: 1;
-}
-
-.brewery {
-	max-width: 1500px;
-	max-height: 700px;
-	justify-content: space-around;
-	
-}
-
-
-.main-header, .main-footer {
-	padding-left: 0em;
-	padding-right: 0em;
-	
+	text-decoration: none;
 }
 
 a:hover {
-	color: cyan;
+	color: maroon;
+	background-color: white;
 }
+
+/* ================================= 
+  Mobile 
+==================================== */
+
+.header {
+	display: block;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+.logo {
+	height: 150px;
+	width: 150px;
+	padding: 10px;
+}
+
+.header ul a {
+	display: block;
+	padding: 5px;
+}
+
+.menu {
+	clear: both;
+	max-height: 0;
+	transition:max-height .2s ease-out;
+}
+
+.menu_2 {
+	padding: 30px 20px;
+	position: relative;
+	cursor: pointer;
+	float: right;
+	
+}
+
+.menu_2 .bars {
+	display: block;
+	background: white;
+	height: 2px;
+	width: 20px;
+	position: relative;
+	transition:all .2s ease-out;
+}
+
+.menu_2 .bars:before, .bars:after {
+	content: "";
+	background: white;
+	height: 2px;
+	width: 20px;
+	position: absolute;
+	transition:all .2s ease-out;
+	
+}
+
+.bars:before {
+	bottom: 5px;
+}
+
+.bars:after {
+	top: 5px;
+}
+
+.menu_1 {
+	display: none;
+}
+
+.menu_1:checked ~ .menu {
+	max-height: 240px;
+
+}
+
+
+
+
+
 
 
 
@@ -96,57 +116,19 @@ a:hover {
  media queries
 ==================================== */
 
-@media (min-width: 576px) {
+@media all and (min-width: 768px) {
 	.sticky {
 		flex-direction: column;
 		min-height: 100vh;
 		flex-grow: 1;
-		flex
-	}
-
-	.main-footer {
-		flex-direction: column;
-	}
-	.main {
-		flex-direction: column;
-		;
-	}
- 
-
-}
-
-@media (min-width: 769px) {
-	.sticky {
-		flex-direction: column;
-		min-height: 100vh;
-		flex-grow: 1;
-		flex
-	}
-	.main {
-		flex-direction: column;
-		;
 	}
 }
 
   
 
 
-@media (min-width: 1025px) {
-	.sticky {
-		flex-direction: row;
-		min-height: 100vh;
-		flex-grow: 1;
-		
-	}
-
-	.main {
-		flex-direction: row;
-		;
-	}
-
-	.main-footer {
-		flex-direction: column;
-	}
+@media all and (min-width: 1026px) {
+	
 
 	
 

@@ -10,33 +10,35 @@
 
     <body id="body">
         <!--Navigation Bar-->
-        <div class= "sticky">
-            <header class="main-header">
-                <nav>
-                    <label></label>
-                    <ul>
-                        <li class="items"><a href="#body" target="_self">Home</a></li>
-                        <li class="items"><a href="brewers.html" target="_self">Our Team</a></li>
-                        <li class="items"><a href="beer.html" target="_self">On Tap Now</a></li>
-                        <li class="items"><a href="#footer" target="_self">Contact</a></li>
-                    </ul>
-                </nav>
+        <div class="sticky">
+            <header class="header">
+                <img class="logo" src="BreweryLogo.jpg" alt="brewery logo">
+                <input class="menu_1" type="checkbox" id="menu_1"/> <!--allows clicking-->
+                <label class="menu_2" for="menu_1"><span class="bars"></span></label> <!--turns into menu-->
+                <ul class="menu">
+                    <li class="item"><a href="beer.html" target="_self">On Tap Now</a></li>
+                    <li class="item"><a href="brewer.html" target="_self">Brew your Own</a></li>
+                    <li class="item"><a href="#footer" target="_self">Contact</a></li>
+                </ul>
             </header>
 
             <!--Main Section-->
             <main class="main">
-                <img class="logo" src="BreweryLogo.jpg" alt="brewery logo">
-                <img class="brewery" src="BrewerPic.jpg">
-                <p>Write something cool about my brewery.</p>
+                <img class="brewery" src="BrewerPic.jpg"> 
+                <h1>Why are you here?</h1>
+                <p>Welcome! Hopefully, you are here because you like beer. That is all we make afterall. Our brewery is located in Louisville, Kentucky. After opening in May of 2020, yes...in May. That picture above has definitely been swipped from the internet.</p>
+                
+                <p>Our passion lies in the creation of small-batch, fresh craft beer. With just over 5 years of homebrewing experience, I'm not sure how you could wrong when selecting what to drink. We currently have 5, soon to be, internationally winning beers.
+                We are excited to be a part of Louisville’s great craft beer scene and brewing tradition.</p>
             </main>    
         </div>
 
         <footer class="main-footer">
             <div id="footer">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/matt-love-b9a59668/" class="linkedin">LinkedIn</a></li>
-                    <li><a href="https://github.com/mdlove02?tab=projects" class="github">Github</a></li>
-                    <li><a href="?" class="Form">Form</a></li>
+                    <li class="item_2"><a href="https://www.linkedin.com/in/matt-love-b9a59668/" target="_self">LinkedIn</a></li>
+                    <li class="item_2"><a href="https://github.com/mdlove02?tab=projects" target="_self">Github</a></li>
+                    <li class="item_2"><a href="?" target="_self">Sign Up</a></li>
                 </ul>
             </div>
                 <p class="copyright">Copyright 2020, Matt Love </p>
