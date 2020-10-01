@@ -25,23 +25,9 @@ a:hover {
 	background-color: white;
 }
 
-/* ================================= 
-  Mobile 
-==================================== */
-
-.header {
-	display: block;
-	width: 100%;
-	position: fixed;
-	z-index: 1;
-	
-}
-
 ul {
 	margin: 0;
-	padding: 0;
 	list-style: none;
-	
 }
 
 .logo {
@@ -50,71 +36,108 @@ ul {
 	padding: 10px;
 }
 
-.header ul a {
-	display: block;
+.main-footer ul {
+	display:flex;
+	justify-content: space-around;
 	padding: 5px;
 }
-
-.menu {
-	clear: both;
-	max-height: 0;
-	transition:max-height .2s ease-out;
-}
-
-.menu_2 {
-	padding: 30px 20px;
-	position: relative;
-	cursor: pointer;
-	float: right;
-	
-}
-
-.menu_2 .bars {
-	display: block;
-	background: white;
-	height: 2px;
-	width: 20px;
-	position: relative;
-	transition:all .2s ease-out;
-}
-
-.menu_2 .bars:before, .bars:after {
-	content: "";
-	background: white;
-	height: 2px;
-	width: 20px;
-	position: absolute;
-	transition:all .2s ease-out;
-	
-}
-
-.bars:before {
-	bottom: 5px;
-}
-
-.bars:after {
-	top: 5px;
-}
-
-.menu_1 {
-	display: none;
-}
-
-.menu_1:checked ~ .menu {
-	max-height: 240px;
-
-}
-
-
-
-
-
-
-
 
 /* ================================= 
  media queries
 ==================================== */
+
+@media all and (max-width: 500px) {
+
+	.sticky {
+		min-height: 100vh;
+	}
+	
+	.menu {
+		display: block;
+		width: 100%;
+		position: static;
+	}
+
+	.menu ul a {
+		display: block;
+		padding: 5px;
+		border: 1px solid black;
+	}
+
+	.navbar {
+		max-height: 0;
+		transition:max-height .2s ease-out;
+	}
+
+	.work {
+		padding: 30px 20px;
+		position: relative;
+		cursor: pointer;
+		float: right;
+		
+	}
+
+	.work .bars {
+		display: block;
+		background: white;
+		height: 2px;
+		width: 20px;
+		position: relative;
+		transition:all .25s ease-out;
+	}
+
+	.work .bars:before, .bars:after {
+		display: block;
+		content: "";
+		background: white;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		transition:all .25s ease-out;
+	}
+
+	.bars:before {
+		top: -5px;
+	}
+
+	.bars:after {
+		top: 5px;
+	}
+
+	.button {
+		display: none;
+	}
+
+	.button:checked ~ .navbar {
+		max-height: 250px;
+
+	}
+
+	.button:checked ~ . .work .bars {
+		background: transparent;
+	}
+
+	.button:checked ~ .work .bars:before {
+		transform: rotate(45deg);
+		top: 0;
+	}
+
+	.button:checked ~ .work .bars:after {
+		transform: rotate(-45deg);
+		top: 0;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.brewery {
+		size: auto;
+		max-width: 100%;
+	}
+
+}
 
 @media all and (min-width: 768px) {
 	.sticky {
