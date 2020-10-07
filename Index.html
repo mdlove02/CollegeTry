@@ -10,6 +10,7 @@
 
     <body>
         <!--Navigation Bar-->
+        <script src = "index.js"></script>
         <div class="sticky"> <!--Keep footer at bottom-->
             <header class="menu">
                 <img class="logo" src="BreweryLogo.jpg" alt="brewery logo">
@@ -30,7 +31,16 @@
                 
                 <p>Our passion lies in the creation of small-batch, fresh craft beer. With just over 5 years of homebrewing experience, I'm not sure how you could wrong when selecting what to drink. We currently have 5, soon to be, internationally winning beers.
                 We are excited to be a part of Louisville’s great craft beer scene and brewing tradition.</p>
-            </main>    
+            </main>  
+            <div class="container">
+                <form id="signup">
+                    <h4>Join Beer of the Month Club</h4>
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="Phone Number" required>
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </div>
         </div>
 
         <footer class="main-footer">
@@ -38,9 +48,10 @@
                 <ul>
                     <li><a href="https://www.linkedin.com/in/matt-love-b9a59668/" target="_self">LinkedIn</a></li>
                     <li><a href="https://github.com/mdlove02?tab=projects" target="_self">Github</a></li>
-                    <li><a href="?" target="_self">Sign Up</a></li>
+                    <li><a href="#signup" target="_self">Sign Up</a></li>
                 </ul>
             </div>
+           
                 <p class="copyright">Copyright 2020, Matt Love </p>
         </footer>
     </body>
