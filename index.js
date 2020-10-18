@@ -9,6 +9,7 @@ function validate(); {
   if(name.length < 6 || name.value == "") {
     message = ("Full name is required!")
     error.innerHTML = message;
+    return false;
   } 
 
   if(email.length < 10 || email.indexOf("@") == -1){
