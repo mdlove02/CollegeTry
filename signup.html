@@ -10,7 +10,6 @@
 
     <body>
         <!--Navigation Bar-->
-        <script src = "index.js"></script>
         <div class="sticky"> <!--Keep footer at bottom-->
             <header class="menu">
                 <img class="logo" src="BreweryLogo.jpg" alt="brewery logo">
@@ -27,12 +26,12 @@
             <!--Main Section-->
             <main class="main">
                 <div class="container">
-                    <form id="signup" onclick="validate();" >
+                    <form id="form" onclick="return validate();" >
                         <h4>Join Beer of the Month Club</h4>
-                        <div id ="error"></div>
                         <input id= name type="text" placeholder="Name">
                         <input id= email type="text" placeholder="Email">
                         <input id= number type="text" placeholder="Phone Number">
+                        <div id="error"></div>
                         <input class="submit" type="submit" value="submit">
                     </form>
                 </div>
@@ -48,7 +47,7 @@
                 </ul>
             </div>
            
-                <p class="copyright">Copyright 2020, Matt Love </p>
+                <p class="copyright">Copyright 2020, Broken Knuckle </p>
         </footer>
         <script src="index.js"></script>
     </body>
