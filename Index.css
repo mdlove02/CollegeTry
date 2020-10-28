@@ -48,7 +48,7 @@ ul {
 .logo {
 	height: 150px;
 	width: 150px;
-	padding: 10px;
+	padding: 5px;
 }
 
 .main-footer ul {
@@ -57,27 +57,12 @@ ul {
 	padding: 5px;
 }
 
-#converter {
-	width: 400px;
-	height: 150px;
-	background: maroon;
-	border: white;
-	position: relative;
-	
+table, th, tr {
+	display: flex;
+	flex-direction: column;
 }
 
-#input {
-	margin-left: 20px;
-	
-}
 
-#inputType {
-	margin-left: 20px;
-}
-
-#resultType {
-	margin-left: 120px;
-}
 
 .container {
 	width: 300px;
@@ -132,7 +117,7 @@ form .submit{
  media queries
 ==================================== */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
 
 	.menu ul a {
 		display: block;
@@ -209,15 +194,14 @@ form .submit{
 		
 }
 
-@media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
-	
+@media only screen and (min-width: 768px) {
+		
 }
 
   
 
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) {
 	.brewery {
 		display: flex;
 		margin-left: auto;
@@ -254,6 +238,10 @@ form .submit{
 
 	h3 {
 		padding: 20px;
+	}
+
+	p {
+		padding: 10px;
 	}
 
 	
