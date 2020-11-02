@@ -22,7 +22,7 @@ function validate() {
   
   //if email is blank or doesn't contain @
   if(email.length == 0) {
-    message = "Email field cannot be empty"
+    message = "Email and Phone field must be filled out"
     error.innerHTML = message;
     return false;
   } else if(email.indexOf("@") == -1) {
@@ -33,16 +33,16 @@ function validate() {
 
   //if phone number doesn't include area code
   if(number.length == 0) {
-    message = "Field must be filled out"
+    message = "Phone number field must be filled out"
     error.innerHTML = message;
     return false;
   } else if(number.length >=1 && number.length < 10) {
-    message = "Must enter full phone number"
+    message = "Number must include area code"
     error.innerHTML = message;
     return false;
     }
 
-  alert ("Thank you for your support" + 'name');
+  alert ("Thank you for your support");
   return true;
 
   
