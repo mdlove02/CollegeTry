@@ -1,12 +1,19 @@
+/**Form */
+
 function validate() {
   //fields
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let number = document.getElementById("number").value;
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const number = document.getElementById("number").value;
   //form
-  let form = document.getElementById("form");
+  const form = document.getElementById("form");
   //error message
-  let error = document.getElementById("error");
+  let error = document.getElementById("error"); //create an error message array so it throws out all errors possible 
+  
+  //let error = ["All fields must be filled out", "Full name must be used", "Valid email musty be used", "Phone number must include area code"];
+
+  
+  
   //variable message
   let message;
   //if name is blank or less/equal to 6 characters 
@@ -45,5 +52,52 @@ function validate() {
   alert ("Thank you for your support");
   return true;
 
+}
+
+/**Calculation */
+
+function change_weight() {
+  let input = document.getElementById("input")
+  let result = document.getElementById("result")
+  let inputType = document.getElementById("inputType");
+  let resultType = document.getElementById("resultType");
+  let inputTypeValue;
+  let resultTypeValue;
+
+  inputTypeValue = inputType.value;
+  resultTypeValue = resultType.value;
+
+  input.addEventListener("keyup", change_weight);
+  inputType.addEventListener("change", change_weight);
+  resultType.addEventListener("change", change_weight);
+
+  //conversion of lbs
+  if(inputType.value == "lbs" && resultType.value == "ounces") {
+    result.value == number(input.value)*16;
+  }else if(inputType.value == "lbs" && resultType.value == "grams") {
+    result.value == number(input.value)*454;
+  }else if(inputType == "lbs" && resultType.value == "lbs") {
+    result.value == number(input.value);
+  }
+
+  //conversion of ounces
+  if(inputType.value == "ounces" && resultType.value == "lbs") {
+    result.value == number(input.value)/16;
+  }else if(inputType.value == "ounces" && resultType.value == "grams") {
+    result.value == number(input.value)*28.35;
+  }else if(inputType == "ounces" && resultType.value == "ounces") {
+    result.value == number(input.value);
+  }
+
+  //conversion of grams
+  if(inputType.value == "grams" && resultType.value == "lbs") {
+    result.value == number(input.value)/454;
+  }else if(inputType.value == "grams" && resultType.value == "ounces") {
+    result.value == number(input.value)/28.35;
+  }else if(inputType == "grams" && resultType.value == "grams") {
+    result.value == number(input.value);
+  }	 
   
+
+
 }

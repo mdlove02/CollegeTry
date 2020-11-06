@@ -72,8 +72,9 @@ ul {
 		
 }
 
-tr td {
-	display:inline-flex;
+table, tr, td {
+	display:flex;
+	justify-content: center;
 		
 }
 

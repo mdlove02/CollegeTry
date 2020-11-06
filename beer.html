@@ -31,21 +31,27 @@
                         <div>
                             <h2>Favorite recipes from the Tap</h2>
                             <h3>Thin Mint Stout (5 gallon batch: 17lbs of grain)</h3>
-                            <p>75% Maris Otter, 10% Chocolate, 10% Dark Caramel, 5% Debittered Black.</p>
-                            <p>Also add some lactose, cocoa nibs, and mint extract.</p>
+                            <ul>
+                                <li>75% Maris Otter, 10% Chocolate, 10% Dark Caramel, 5% Debittered Black.</li>
+                                <li>Also add some lactose, cocoa nibs, and mint extract.</li>
+                            </ul>
                         </div>
                         <div>
                             <h3>Islay Scotch Ale (5 gallon batch: 14lbs of grain)</h3>
-                            <p>75% Golden Promise, 10% Melainodin, 5% Victory, 5% Light Caramel, 3% Roasted Barley, 2% Peat Smoked. </p>
+                            <ul>    
+                                <li>75% Golden Promise, 10% Melainodin, 5% Victory, 5% Light Caramel, 3% Roasted Barley, 2% Peat Smoked. </li>
+                            </ul>
                         </div>
                         <div>
                             <h3>Schwarzbier Lager (5 gallon batch: 11lbs of grain)</h3>
-                            <p>50% Pilsner, 40% Munich, 5% Caramunich, 5% Midnight wheat. </p>
+                            <ul>
+                                <li>50% Pilsner, 40% Munich, 5% Caramunich, 5% Midnight wheat. </li>
+                            </ul>   
                         </div>
                     </div>
 
 
-                    <table id="converter">
+                    <table id="converter"oninput="change_weight();">
                         <th>
                             <h4>Weight Converter: Use for conversion of recipes above for larger or smaller batches.</h4>
                         </th>
@@ -60,7 +66,6 @@
                             <td class="newData">
                                 <select id= inputType>
                                     <option option= "lbs">lbs</option>
-                                    <option option= "kgs">kgs</option>
                                     <option option= "ounces">oz</option>
                                     <option option= "grams">grams</option>
                                 </select>
@@ -68,7 +73,6 @@
                             <td>
                                 <select id= resultType>
                                     <option option= "lbs">lbs</option>
-                                    <option option= "kgs">kgs</option>
                                     <option option= "ounces">oz</option>
                                     <option option= "grams">grams</option>
                                 </select>
