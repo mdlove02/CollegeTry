@@ -1,19 +1,16 @@
-/**Form */
+/*Form*/
 
-function validate() {
+function validate() { 
   //fields
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const number = document.getElementById("number").value;
-  //form
-  const form = document.getElementById("form");
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let number = document.getElementById("number").value;
+ 
   //error message
   let error = document.getElementById("error"); //create an error message array so it throws out all errors possible 
   
   //let error = ["All fields must be filled out", "Full name must be used", "Valid email musty be used", "Phone number must include area code"];
 
-  
-  
   //variable message
   let message;
   //if name is blank or less/equal to 6 characters 
@@ -49,55 +46,51 @@ function validate() {
     return false;
     }
 
-  alert ("Thank you for your support");
+  alert ("Thank you for your support" + " " + name);
   return true;
 
 }
 
-/**Calculation */
+/*Calculation*/
 
-function change_weight() {
-  let input = document.getElementById("input")
-  let result = document.getElementById("result")
+function changeWeight() {
+  let input = document.getElementById("input");
+  let result = document.getElementById("result");
   let inputType = document.getElementById("inputType");
   let resultType = document.getElementById("resultType");
-  let inputTypeValue;
-  let resultTypeValue;
+  
+  input.addEventListener("input", changeWeight);
+  inputType.addEventListener("change", changeWeight);
+  resultType.addEventListener("change", changeWeight);
 
-  inputTypeValue = inputType.value;
-  resultTypeValue = resultType.value;
-
-  input.addEventListener("keyup", change_weight);
-  inputType.addEventListener("change", change_weight);
-  resultType.addEventListener("change", change_weight);
+  //result.value = input.value
 
   //conversion of lbs
-  if(inputType.value == "lbs" && resultType.value == "ounces") {
-    result.value == number(input.value)*16;
-  }else if(inputType.value == "lbs" && resultType.value == "grams") {
-    result.value == number(input.value)*454;
-  }else if(inputType == "lbs" && resultType.value == "lbs") {
-    result.value == number(input.value);
+  if(inputType.value === "lbs" && resultType.value === "ounces") {
+    result.value = (input.value) * 16;
+  } else if(inputType.value === "lbs" && resultType.value === "grams") {
+    result.value = (input.value) * 454;
+  } else if(inputType.value === "lbs" && resultType.value === "lbs") {
+    result.value = (input.value) * 1;
   }
 
   //conversion of ounces
-  if(inputType.value == "ounces" && resultType.value == "lbs") {
-    result.value == number(input.value)/16;
-  }else if(inputType.value == "ounces" && resultType.value == "grams") {
-    result.value == number(input.value)*28.35;
-  }else if(inputType == "ounces" && resultType.value == "ounces") {
-    result.value == number(input.value);
+  if(inputType.value === "ounces" && resultType.value === "lbs") {
+    result.value = (input.value)/16;
+  } else if(inputType.value === "ounces" && resultType.value === "grams") {
+    result.value = (input.value)*28.35;
+  } else if(inputType.value === "ounces" && resultType.value === "ounces") {
+    result.value = (input.value)*1;
   }
 
   //conversion of grams
-  if(inputType.value == "grams" && resultType.value == "lbs") {
-    result.value == number(input.value)/454;
-  }else if(inputType.value == "grams" && resultType.value == "ounces") {
-    result.value == number(input.value)/28.35;
-  }else if(inputType == "grams" && resultType.value == "grams") {
-    result.value == number(input.value);
-  }	 
-  
+  if(inputType.value === "grams" && resultType.value === "lbs") {
+    result.value = (input.value)/454;
+  } else if(inputType.value === "grams" && resultType.value === "ounces") {
+    result.value = (input.value)/28.35;
+  } else if(inputType.value === "grams" && resultType.value === "grams") {
+    result.value = (input.value)*1;
+  }  
 
-
+ 
 }

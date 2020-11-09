@@ -51,30 +51,30 @@
                     </div>
 
 
-                    <table id="converter"oninput="change_weight();">
+                    <table id="converter" oninput="changeWeight();" onchange="changeWeight();">
                         <th>
                             <h4>Weight Converter: Use for conversion of recipes above for larger or smaller batches.</h4>
                         </th>
                         <tr>
                             <td>
-                                <input id= input type="text" placeholder="Input">
+                                <input id= input type="number" placeholder="Input">
                                 <span>=</span>
-                                <input id= result type="text" placeholder="Result">
+                                <input id= result type="number" placeholder="Result">
                             </td>
                         </tr>
                         <tr>
                             <td class="newData">
                                 <select id= inputType>
-                                    <option option= "lbs">lbs</option>
-                                    <option option= "ounces">oz</option>
-                                    <option option= "grams">grams</option>
+                                    <option value= "lbs">lbs</option>
+                                    <option value= "ounces">oz</option>
+                                    <option value= "grams">grams</option>
                                 </select>
                             </td>
                             <td>
                                 <select id= resultType>
-                                    <option option= "lbs">lbs</option>
-                                    <option option= "ounces">oz</option>
-                                    <option option= "grams">grams</option>
+                                    <option value= "lbs">lbs</option>
+                                    <option value= "ounces">oz</option>
+                                    <option value= "grams">grams</option>
                                 </select>
                             </td>
                         </tr>
