@@ -52,13 +52,14 @@ ul {
 }
 
 
-#form, .container {
+.container {
 	width: 300px;
 	height: 400px;
 	margin: 5px auto;
 	background: rgb(97, 5, 5);
 	position: relative;
 	border: 2px solid white;
+	
 		
 }
 
@@ -225,7 +226,7 @@ h4 {
 	}
 
 	p {
-		padding: 5px;
+		padding: 15px;
 	}
 
 		
@@ -246,14 +247,28 @@ h4 {
 		margin-right: auto;
 		width: 100%;
 	
-	}	
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	h1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 0 20px 0 20px;
+	}
 
 	h3 {
 		padding: 15px;
 	}
 
 	p {
-		padding: 5px;
+		padding: 10px;
 	}
 }
 
@@ -273,7 +288,7 @@ h4 {
 		display: flex;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
+		width: 85%;
 	
 	}
 

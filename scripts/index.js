@@ -58,14 +58,12 @@ function changeWeight() {
   let result = document.getElementById("result");
   let inputType = document.getElementById("inputType");
   let resultType = document.getElementById("resultType");
-  
+  //event listeners
   input.addEventListener("input", changeWeight);
   inputType.addEventListener("change", changeWeight);
   resultType.addEventListener("change", changeWeight);
 
-  //result.value = input.value
-
-  //conversion of lbs
+   //conversion of lbs
   if(inputType.value === "lbs" && resultType.value === "ounces") {
     result.value = (input.value) * 16;
   } else if(inputType.value === "lbs" && resultType.value === "grams") {
