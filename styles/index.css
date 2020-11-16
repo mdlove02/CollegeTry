@@ -159,7 +159,7 @@ h4 {
 	.navbar {
 		display: none;
 		width: 100%;
-		transition:max-height .25s ease-out;
+		transition:max-height .35s ease-out;
 	}
 
 	.work {
@@ -176,7 +176,7 @@ h4 {
 		height: 2px;
 		width: 20px;
 		position: relative;
-		transition:all .25s ease-out;
+		transition:all .35s ease-out;
 	}
 
 	.work .bars:before, .bars:after {
@@ -186,7 +186,7 @@ h4 {
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		transition:all .25s ease-out;
+		transition:all .35s ease-out;
 	}
 
 	.bars:before {
@@ -231,7 +231,7 @@ h4 {
 	}
 
 	#converter {
-		width: 90%;
+		width: max-content;
 		height: auto;
 		margin-top: 20px;
 			

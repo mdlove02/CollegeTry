@@ -59,34 +59,34 @@ function changeWeight() {
   let inputType = document.getElementById("inputType");
   let resultType = document.getElementById("resultType");
   //event listeners
-  input.addEventListener("input", changeWeight);
+  input.addEventListener("input", changeWeight); //used so it doesn't run before user uses converter
   inputType.addEventListener("change", changeWeight);
   resultType.addEventListener("change", changeWeight);
 
    //conversion of lbs
-  if(inputType.value === "lbs" && resultType.value === "ounces") {
+  if(inputType.value == "lbs" && resultType.value == "ounces") {  
     result.value = (input.value) * 16;
-  } else if(inputType.value === "lbs" && resultType.value === "grams") {
+  } else if(inputType.value == "lbs" && resultType.value == "grams") {
     result.value = (input.value) * 454;
-  } else if(inputType.value === "lbs" && resultType.value === "lbs") {
+  } else if(inputType.value == "lbs" && resultType.value == "lbs") {
     result.value = (input.value) * 1;
   }
 
   //conversion of ounces
-  if(inputType.value === "ounces" && resultType.value === "lbs") {
+  if(inputType.value == "ounces" && resultType.value == "lbs") {
     result.value = (input.value)/16;
-  } else if(inputType.value === "ounces" && resultType.value === "grams") {
+  } else if(inputType.value == "ounces" && resultType.value == "grams") {
     result.value = (input.value)*28.35;
-  } else if(inputType.value === "ounces" && resultType.value === "ounces") {
+  } else if(inputType.value == "ounces" && resultType.value == "ounces") {
     result.value = (input.value)*1;
   }
 
   //conversion of grams
-  if(inputType.value === "grams" && resultType.value === "lbs") {
+  if(inputType.value == "grams" && resultType.value == "lbs") {
     result.value = (input.value)/454;
-  } else if(inputType.value === "grams" && resultType.value === "ounces") {
+  } else if(inputType.value == "grams" && resultType.value == "ounces") {
     result.value = (input.value)/28.35;
-  } else if(inputType.value === "grams" && resultType.value === "grams") {
+  } else if(inputType.value == "grams" && resultType.value == "grams") {
     result.value = (input.value)*1;
   }  
 
