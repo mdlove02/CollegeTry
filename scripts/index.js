@@ -58,10 +58,7 @@ function changeWeight() {
   let result = document.getElementById("result");
   let inputType = document.getElementById("inputType");
   let resultType = document.getElementById("resultType");
-  //event listeners
-  input.addEventListener("input", changeWeight); //used so it doesn't run before user uses converter
-  inputType.addEventListener("change", changeWeight);
-  resultType.addEventListener("change", changeWeight);
+  
 
    //conversion of lbs
   if(inputType.value == "lbs" && resultType.value == "ounces") {  
