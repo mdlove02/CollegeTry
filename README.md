@@ -28,12 +28,12 @@ Contains a picture of my "brewery" and a short intro into the business. When adj
 
 ***Brew your own page***
 
-Contains a picture of "my" beers. Also has a list of my favorite beer recipes and a weight converter that will allow people to make their own versions at home. When adjusting to smaller browser the rows will change to columns until the picture. 
+Contains a picture of "my" beers. Also has a list of my favorite beer recipes and a weight converter that will allow people to make their own versions at home. When adjusting to smaller browser the rows will change to columns under the picture. 
 
 
 ***Beer of the month page*** 
 
-Contains the form that can be submitted in order to join the beer of the month club.
+Contains the form that can be "submitted" in order to join the beer of the month club.
 
 ***How I tried to complete the assignment***
 

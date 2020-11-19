@@ -3,7 +3,6 @@
 ==================================== */
 
 * {
-	box-sizing: border-box;
 	margin: 0;
 }
 
@@ -159,7 +158,7 @@ h4 {
 	}
 
 	.work {
-		padding: 25px 25px;
+		padding: 25px;
 		position: relative;
 		cursor: pointer;
 		float: right;
@@ -172,7 +171,7 @@ h4 {
 		height: 2px;
 		width: 20px;
 		position: relative;
-		transition:all .35s ease-out;
+		transition:all .25s ease-out;
 	}
 
 	.work .bars:before, .bars:after {
@@ -182,7 +181,7 @@ h4 {
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		transition:all .35s ease-out;
+		transition:all .50s ease-out;
 	}
 
 	.bars:before {
@@ -203,12 +202,12 @@ h4 {
 	}
 
 	.button:checked ~ .work .bars:before {
-		transform: rotate(45deg);
+		transform: rotate(315deg);
 		top: 0;
 	}
 
 	.button:checked ~ .work .bars:after {
-		transform: rotate(-45deg);
+		transform: rotate(405deg);
 		top: 0;
 	}
 
@@ -344,13 +343,9 @@ h4 {
 		width: 50%;
 		height: auto;
 		margin: 15px auto;
-	
-			
 	}
 
-	
 	p {
-	
 		padding: 5px;
 	}
 
